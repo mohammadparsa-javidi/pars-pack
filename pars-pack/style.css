@@ -1,0 +1,238 @@
+*{
+    /* we set padding & margin:0 for all element */
+    padding: 0;
+    margin: 0;
+    /* used box sizing:border-box that padding and margin or border,... don't affect the width and height of the container of element*/
+    box-sizing: border-box;
+}
+body{
+    font-family: "B yekan";
+}
+.container{
+    /* use margin right & left auto that does not stick to page*/
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    
+}
+.menubar{
+    /* use flex that put the dives together */
+    display: flex;
+    /* justify content  for space between right & left div*/
+    justify-content: space-between;
+}
+.right_header{
+    display: flex;
+    /* Center the elements horizontally */
+    align-items: center;
+}
+.right_header ul{
+    display: flex;
+    /* use none to delete the circle next to the ul */
+    list-style-type: none;
+}
+.right_header li{
+    padding: 20px;
+    margin-right: 40px;
+    color: #999;
+}
+.right_header li:hover{
+    color: #288ed9;
+}
+.left_header{
+    display: flex;
+    align-items: center;
+}
+.left_header a{
+    padding: 20px;
+    color: #288ed9;
+    /* text-decoration for delete line under the a element */
+    text-decoration: none;
+}
+.left_header .enter{
+    padding: 10px;
+    color: #fff;
+    background-color: #288ed9;
+    border-radius: 30px;
+}
+/* when hover the div with .enter class color of the div is changing */
+.left_header .enter:hover{
+    background-color: #0c77c5;
+}
+.buy_host{
+    display: flex;
+    align-items: center;
+}
+.right_section{
+    /* set width for show the image in the .image_buy class */
+    width: 40%;
+}
+.right_section .title{
+    margin: 50px 0 5px;
+    /* margin-top:50px & margin right & left:0 margin-bottom:5px */
+    color: #288ed9;
+}
+.right_section .desc{
+    color: #a8a4a4;
+    margin-bottom: 10px;
+    
+}
+.right_section .info{
+    color: #7e7e7e;
+    /* use justify for align text */
+    text-align: justify;
+}
+.image_buy{
+    margin-right: 15px;
+    /* set width for show the image */
+    width: 60%;
+    padding: 15px;
+}
+.host_section{
+    /* set linear gradiant for changing color from top to bottom */
+    background: linear-gradient(to bottom,rgba(214,238,255,0) 0,#d6eeff 100%);
+}
+.host_panel{
+    text-align: center;
+    /* padding for space between image_buy div */
+    padding-top: 100px;
+}
+.host_list{
+    display: flex;
+    /* padding for space between host_plan and host list */
+    padding-top: 100px;
+}
+.host_item{
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    color: #7e7e7e;
+    /* position relative for displacement h2 in host item  */
+    position: relative;
+}
+.host_item h2{
+    /* position absolute  for displacement than the container that get position relative*/
+    position: absolute;
+    color: #fff;
+    background-color: #288ed9;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    top: -30px;
+    right: 0;
+    left: 0;
+    /* margin auto for putting up h2 in center of host_item */
+    margin: auto;
+    border-radius: 10px;
+}
+/* like a buy_host div */
+.cloud_host{
+    display: flex;
+    align-items: center;
+}
+.right_host_image{
+    width: 50%;
+}
+.left_host_cloud{
+    width: 50%;
+    margin-right: 30px;
+    text-align: justify;
+    padding: 30px;
+}
+.left_host_cloud h1{
+    padding-bottom: 15px;
+    color: #288ed9;
+}
+.left_host_cloud p{
+    color: #7e7e7e; 
+    line-height: 35px;
+}
+.type_host{
+    display: flex;
+    align-items: center;
+}
+.right_type{
+    width: 50%;
+    padding: 20px;
+}
+.left_kind_img{
+    
+    width: 50%;
+}
+.right_type h1{
+    padding: 15px;
+    color: #288ed9;
+}
+.right_type p{
+    line-height: 35px;
+    color: #7e7e7e;
+}
+.clouding_host{
+    display: flex;
+    align-items: center;
+}
+.right_clouding{
+    width: 50%;
+    padding: 10px 40px;
+}
+.left_clouding{
+    width: 50%;
+}
+.left_clouding h1{
+    padding: 15px;
+    color: #288ed9;
+}
+.left_clouding p{
+    line-height: 35px;
+    color: #7e7e7e;
+}
+.download_host{
+    display: flex;
+    align-items: center;
+}
+.right_download{
+    width: 50%;
+    padding: 30px;
+}
+.right_download h1{
+    padding: 15px;
+    color: #288ed9;
+}
+.right_download p{
+    line-height: 35px;
+    color: #7e7e7e;
+}
+.left_download{
+    width: 50%;
+}
+.right_download .buy_download{
+    background-color: #288ed9;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.right_download .buy_download:hover{
+    background-color: #0c77c5;
+}
+.right_download a{
+    text-decoration: none;
+}
+.footer_section{
+    text-align: center;
+    padding: 60px 0;
+    color: #999;
+}
+.socials i{
+    font-size: 30px;
+    padding: 10px;
+    
+}
